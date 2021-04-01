@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Demo Link](https://the-react-calculator-app.herokuapp.com/)
+[Demo Link](https://strawberry-custard-25905.herokuapp.com/)
 
 ### Setup
 
