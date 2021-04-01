@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://the-react-calculator-app.herokuapp.com/)
+[Demo Link](https://the-react-calculator-app.herokuapp.com/)
 
 ### Setup
 
