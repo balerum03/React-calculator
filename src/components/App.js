@@ -6,8 +6,8 @@ import calculate from '../logic/calculate';
 const App = () => (
   <React.Fragment key="key">
     <Display />
-    <ButtonPanels calculate={calculate} />
+    <ButtonPanels />
   </React.Fragment>
 );
-
+calculate();
 export default App;
