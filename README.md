@@ -1,4 +1,4 @@
-# Calculator - Milestone 2.
+# Calculator - Milestone 4.
 
 > Calculator App built with React.
 
