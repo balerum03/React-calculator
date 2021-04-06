@@ -18,7 +18,7 @@ const operate = (number1, number2, operator) => {
       total = bigNumber1.div(bigNumber2);
       break;
     case '%':
-      total = Math.floor(bigNumber1.div(100));
+      total = bigNumber1.mod(100);
       break;
     default:
   }
