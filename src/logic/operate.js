@@ -6,16 +6,16 @@ const operate = (number1, number2, operator) => {
   let total = Big();
   switch (operator) {
     case '+':
-      total = bigNumber1 + bigNumber2;
+      total = bigNumber1.plus(bigNumber2);
       break;
     case '-':
-      total = bigNumber1 - bigNumber2;
+      total = bigNumber1.minus(bigNumber2);
       break;
     case 'X':
-      total = bigNumber1 * bigNumber2;
+      total = bigNumber1.times(bigNumber2);
       break;
     case '÷':
-      total = bigNumber1 / bigNumber2;
+      total = bigNumber1.div(bigNumber2);
       break;
     case '%':
       total = Math.floor(bigNumber1 / 100);
