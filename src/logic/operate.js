@@ -7,22 +7,27 @@ const operate = (number1, number2, operator) => {
   switch (operator) {
     case '+':
       total = bigNumber1.plus(bigNumber2);
-      return total;
+      break;
     case '-':
       total = bigNumber1.minus(bigNumber2);
-      return total;
+      break;
     case 'X':
       total = bigNumber1.times(bigNumber2);
-      return total;
+      break;
     case '÷':
-      total = bigNumber1.div(bigNumber2);
-      return total;
+      if (bigNumber1.c[0] !== 0 && bigNumber2.c[0] !== 0) {
+        total = bigNumber1.div(bigNumber2);
+      } else {
+        total = '0 is not divisible';
+      }
+      break;
     case '%':
-      total = bigNumber1.mod(100);
-      return total;
+      total = bigNumber1.div(100);
+      break;
     default:
       return Error;
   }
+  return total;
 };
 
 export default operate;

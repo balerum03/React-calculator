@@ -7,7 +7,6 @@ export default function Calculate(calcObj, btnName) {
     case '-':
     case '÷':
     case '+':
-    case '%':
     case '=':
       if (total !== '' && next !== '') {
         total = operate(total, next, operation);
@@ -31,9 +30,8 @@ export default function Calculate(calcObj, btnName) {
       operation = '';
       break;
     case '+/-':
-      next *= -1;
-      total *= -1;
-      operation = '';
+      total = operate(next, -1, 'X');
+      next = '';
       break;
     case '.':
       if (total.includes('.')) {
@@ -41,8 +39,15 @@ export default function Calculate(calcObj, btnName) {
       }
       total += '.';
       break;
+    case '%':
+      operation = btnName;
+      total = operate(next, total, operation);
+      next = '';
+      operation = '';
+      break;
     default:
-      return { next, total, operation };
+      next += btnName;
+      break;
   }
   return { next, total, operation };
 }
