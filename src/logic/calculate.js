@@ -3,10 +3,11 @@ import operate from './operate';
 export default function Calculate(calcObj, btnName) {
   let { total, next, operation } = calcObj;
   switch (btnName) {
-    case '+':
+    case 'X':
     case '-':
     case '÷':
-    case 'X':
+    case '+':
+    case '%':
     case '=':
       if (total !== '' && next !== '') {
         total = operate(total, next, operation);
@@ -24,25 +25,24 @@ export default function Calculate(calcObj, btnName) {
         operation = btnName;
       }
       break;
-    case '+/-':
-      next = operate(next, 0, 'X');
-      break;
-    case '%':
-      if (next !== '') {
-        total = operate(next, 0, '%');
-        next = '';
-      }
-      break;
     case 'AC':
       total = '';
       next = '';
       operation = '';
       break;
-    default:
-      if (btnName === '.' && next.includes('.')) {
+    case '+/-':
+      next *= -1;
+      total *= -1;
+      operation = '';
+      break;
+    case '.':
+      if (total.includes('.')) {
         break;
       }
-      next += btnName;
+      total += '.';
+      break;
+    default:
+      return { next, total, operation };
   }
   return { next, total, operation };
 }

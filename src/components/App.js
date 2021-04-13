@@ -19,7 +19,7 @@ const App = () => {
       <Display
         result={String(state.total)}
         next={String(state.next)}
-        operation={String(state.operation)}
+        operation={(state.operation)}
       />
       <ButtonPanels clickHandler={handleClick} />
     </React.Fragment>
