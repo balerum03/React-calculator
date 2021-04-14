@@ -1,33 +1,53 @@
 import operate from './operate';
 
-const calculate = ({ total, next, operation }, buttonName) => {
-  let result = total;
-  let nextNumber = next;
-
-  switch (buttonName) {
-    case '+/-':
-      nextNumber *= -1;
-      result += -1;
+export default function Calculate(calcObj, btnName) {
+  let { total, next, operation } = calcObj;
+  switch (btnName) {
+    case 'X':
+    case '-':
+    case '÷':
+    case '+':
+    case '=':
+      if (total !== '' && next !== '') {
+        total = operate(total, next, operation);
+        next = '';
+        if (btnName === '=') {
+          operation = '';
+        } else {
+          operation = btnName;
+        }
+      } else if (total !== '' && next === '') {
+        operation = btnName;
+      } else {
+        total = next;
+        next = '';
+        operation = btnName;
+      }
       break;
     case 'AC':
-      result = null;
-      nextNumber = null;
+      total = '';
+      next = '';
+      operation = '';
       break;
-    case '=':
+    case '+/-':
+      total = operate(next, -1, 'X');
+      next = '';
       break;
     case '.':
-      if (result.includes('.')) {
+      if (total.includes('.')) {
         break;
       }
-      result += buttonName;
+      total += '.';
       break;
-    case '+': case '-': case '%': case '÷': case 'X':
-      result = operate(result, nextNumber, operation);
+    case '%':
+      operation = btnName;
+      total = operate(next, total, operation);
+      next = '';
+      operation = '';
       break;
     default:
-      return { result, nextNumber };
+      next += btnName;
+      break;
   }
-  return { result, nextNumber };
-};
-
-export default calculate;
+  return { next, total, operation };
+}
