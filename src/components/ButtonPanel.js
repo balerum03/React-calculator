@@ -5,28 +5,28 @@ import Button from './Button';
 const ButtonPanel = ({
   row1, row2, row3, row4, row5, clickHandler,
 }) => (
-  <div>
-    <div>
+  <div className="button-panel">
+    <div className="button-row">
       {row1.map((item) => (
         <Button value={item} key={item} onClick={clickHandler} />
       ))}
     </div>
-    <div>
+    <div className="button-row">
       {row2.map((item) => (
         <Button value={item} key={item} onClick={clickHandler} />
       ))}
     </div>
-    <div>
+    <div className="button-row">
       {row3.map((item) => (
         <Button value={item} key={item} onClick={clickHandler} />
       ))}
     </div>
-    <div>
+    <div className="button-row">
       {row4.map((item) => (
         <Button value={item} key={item} onClick={clickHandler} />
       ))}
     </div>
-    <div>
+    <div className="button-row">
       {row5.map((item) => (
         <Button value={item} key={item} onClick={clickHandler} />
       ))}
