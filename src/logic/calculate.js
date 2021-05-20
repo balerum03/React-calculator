@@ -33,12 +33,6 @@ export default function Calculate(calcObj, btnName) {
       total = operate(next, -1, 'X');
       next = '';
       break;
-    case '.':
-      if (total.includes('.')) {
-        break;
-      }
-      total += '.';
-      break;
     case '%':
       operation = btnName;
       total = operate(next, total, operation);
@@ -46,6 +40,9 @@ export default function Calculate(calcObj, btnName) {
       operation = '';
       break;
     default:
+      if (btnName === '.' && next.includes('.')) {
+        break;
+      }
       next += btnName;
       break;
   }
