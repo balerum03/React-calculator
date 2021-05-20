@@ -17,4 +17,4 @@ describe('User can perform operations', () => {
     const total = operate('2', '2', 'X');
     expect(total.c).toEqual([4]);
   });
-})
+});

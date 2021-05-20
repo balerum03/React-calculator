@@ -4,8 +4,7 @@ import Calculator from '../Calculator';
 
 test('Component renders correctly', () => {
   const component = renderer.create(
-    <Calculator />
-  )
-  .toJSON();
+    <Calculator />,
+  ).toJSON();
   expect(component).toMatchSnapshot();
 });

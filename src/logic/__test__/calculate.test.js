@@ -1,6 +1,6 @@
 import calculate from '../calculate';
 
-describe('User clicls on AC button', () =>{
+describe('User clicls on AC button', () => {
   test('Clears everything', () => {
     expect(calculate({
       total: '2', next: '3', operation: '+',
@@ -32,8 +32,8 @@ describe('User can enter a number', () => {
 
 describe('User gets the total of an operation', () => {
   test('user clicks on =', () => {
-    let result = calculate({
-      total: '1', next: '1' , operation: '+',
+    const result = calculate({
+      total: '1', next: '1', operation: '+',
     }, '=');
     expect(result.total.c).toEqual([2]);
   });
@@ -42,7 +42,7 @@ describe('User gets the total of an operation', () => {
 describe('User can input decimals', () => {
   test('User clicks on (.)', () => {
     let result = calculate({
-      total: '', next: '', operation: ''
+      total: '', next: '', operation: '',
     }, '2');
     expect(result.next).toEqual('2');
     result = calculate(result, '.');

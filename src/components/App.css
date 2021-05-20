@@ -70,7 +70,3 @@
   color: gray;
   align-items: center;
 }
-
-.calculator-btn:hover {
-  background-color: rgb(236, 154, 0);
-}

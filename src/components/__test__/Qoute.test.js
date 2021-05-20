@@ -5,7 +5,6 @@ import Qoute from '../Quote';
 test('Component renders correctly', () => {
   const component = renderer.create(
     <Qoute />,
-  )
-  .toJSON();
+  ).toJSON();
   expect(component).toMatchSnapshot();
 });
