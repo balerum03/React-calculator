@@ -71,16 +71,6 @@
   align-items: center;
 }
 
-.calculator-btn {
-  border-radius: 7px;
-  color: white;
-  width: 25%;
-  text-decoration: none;
-  background-color: orange;
-  margin-top: 1rem;
-  padding: 1rem 2rem;
-}
-
 .calculator-btn:hover {
   background-color: rgb(236, 154, 0);
 }

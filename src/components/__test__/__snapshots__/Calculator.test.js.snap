@@ -1,0 +1,343 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<div
+  className="calculator"
+>
+  <div
+    className="display"
+  >
+    
+    
+    
+  </div>
+  <div
+    className="button-panel"
+  >
+    <div
+      className="button-row"
+    >
+      <button
+        name="AC"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "gray",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        name="+/-"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "gray",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        name="%"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "gray",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        %
+      </button>
+      <button
+        name="÷"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "gray",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        ÷
+      </button>
+    </div>
+    <div
+      className="button-row"
+    >
+      <button
+        name="7"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "orange",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        7
+      </button>
+      <button
+        name="8"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "orange",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        8
+      </button>
+      <button
+        name="9"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "orange",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        9
+      </button>
+      <button
+        name="X"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "gray",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        X
+      </button>
+    </div>
+    <div
+      className="button-row"
+    >
+      <button
+        name="4"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "orange",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        4
+      </button>
+      <button
+        name="5"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "orange",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        5
+      </button>
+      <button
+        name="6"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "orange",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        6
+      </button>
+      <button
+        name="-"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "gray",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      className="button-row"
+    >
+      <button
+        name="1"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "orange",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        1
+      </button>
+      <button
+        name="2"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "orange",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        2
+      </button>
+      <button
+        name="3"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "orange",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        3
+      </button>
+      <button
+        name="+"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "gray",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      className="button-row"
+    >
+      <button
+        name="0"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "light-grey",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "50%",
+          }
+        }
+        type="button"
+      >
+        0
+      </button>
+      <button
+        name="."
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "orange",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        .
+      </button>
+      <button
+        name="="
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "gray",
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "height": "100px",
+            "width": "25%",
+          }
+        }
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
