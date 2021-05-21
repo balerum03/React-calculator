@@ -50,3 +50,21 @@ describe('User can input decimals', () => {
     expect(result.next).toEqual('2.3');
   });
 });
+
+describe('User can use +/-', () => {
+  test('user changes the from negative to positive', () => {
+    const result = calculate({
+      total: '', next: '1', operation: '',
+    }, '+/-');
+    expect(result.total.s).toEqual(-1);
+  });
+});
+
+describe('User can user %', () => {
+  test('user clicks on % after a number', () => {
+    const result = calculate({
+      total: '', next: '100', operation: '',
+    }, '%');
+    expect(result.total.c).toEqual([1]);
+  });
+});
