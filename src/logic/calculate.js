@@ -30,14 +30,24 @@ export default function Calculate(calcObj, btnName) {
       operation = '';
       break;
     case '+/-':
-      total = operate(next, -1, 'X');
-      next = '';
+      if (next) {
+        total = operate(next, -1, 'X');
+        next = '';
+      } else if (total) {
+        total = operate(total, -1, 'X');
+        next = '';
+      }
       break;
     case '%':
       operation = btnName;
-      total = operate(next, total, operation);
-      next = '';
-      operation = '';
+      if (next) {
+        total = operate(next, total, operation);
+        next = '';
+        operation = '';
+      } else if (total) {
+        total = operate(total, next, operation);
+        operation = '';
+      }
       break;
     default:
       if (btnName === '.' && next.includes('.')) {

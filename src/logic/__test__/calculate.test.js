@@ -53,18 +53,29 @@ describe('User can input decimals', () => {
 
 describe('User can use +/-', () => {
   test('user changes the from negative to positive', () => {
-    const result = calculate({
-      total: '', next: '1', operation: '',
-    }, '+/-');
+    let result = calculate({
+      total: '', next: '', operation: '',
+    }, '2');
+    expect(result.next).toEqual('2');
+    result = calculate(result, '+');
+    result = calculate(result, '4');
+    result = calculate(result, '=');
+    result = calculate(result, '+/-');
+    expect(result.total.c).toEqual([6]);
     expect(result.total.s).toEqual(-1);
   });
 });
 
-describe('User can user %', () => {
+describe('User can use %', () => {
   test('user clicks on % after a number', () => {
-    const result = calculate({
-      total: '', next: '100', operation: '',
-    }, '%');
-    expect(result.total.c).toEqual([1]);
+    let result = calculate({
+      total: '', next: '', operation: '',
+    }, '2');
+    result = calculate(result, '+');
+    result = calculate(result, '4');
+    result = calculate(result, '=');
+    result = calculate(result, '%');
+    expect(result.total.c).toEqual([6]);
+    expect(result.total.e).toEqual(-2);
   });
 });
